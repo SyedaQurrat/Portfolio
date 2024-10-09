@@ -1,17 +1,17 @@
 import React, { useEffect } from 'react';
+import AOS from 'aos'; // Change to import
 import styles from '@styles/skills.module.css'; 
 import 'aos/dist/aos.css'; 
 
 const Skills = () => {
     useEffect(() => {
-        const AOS = require('aos'); 
-        AOS.init({ offset: 0 });
+        AOS.init({ offset: 0 }); // Initialize AOS here
     }, []);
 
     return (
         <>
             <div className={styles.skillsContainer}>
-                <h1>My Skills</h1>
+                <h1>MY SKILLS</h1>
 
                 <section className={styles.skillSection}>
                     <h2>Technical Skills</h2>
@@ -70,3 +70,4 @@ const Skills = () => {
 };
 
 export default Skills;
+
