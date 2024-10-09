@@ -1,0 +1,117 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+.body {
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.aboutContainer {
+    color: rgb(242, 253, 241);
+    padding: 50px;
+    text-align: center; 
+}
+
+.aboutContainer h1 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: #77c04b;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Flex container for content and image to align them side by side */
+.contentImageContainer {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.aboutContent {
+    flex: 1;
+    background-color: black;
+    padding: 30px;
+    border-radius: 30px;
+    text-align: justify; 
+}
+
+.aboutContent p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.img {
+    flex: 1;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.img img {
+    width: 100%;
+    height: auto; 
+    max-width: 400px;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .contentImageContainer {
+        flex-direction: column; 
+    }
+
+    .aboutContainer h1 {
+        font-size: 2.5rem;
+    }
+
+    .aboutContent p {
+        font-size: 1rem;
+    }
+
+    .img img {
+        max-width: 100%;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .aboutContainer h1 {
+        font-size: 2.7rem;
+    }
+
+    .aboutContent p {
+        font-size: 1.1rem;
+    }
+
+    .contentImageContainer {
+        gap: 20px;
+    }
+
+    .aboutContent, .img {
+        padding: 25px;
+        box-shadow: 0 0 25px #077b32;
+    }
+}
+
+/* Larger Screens */
+@media (min-width: 1025px) {
+    .contentImageContainer {
+        flex-direction: row; 
+        gap: 50px;
+    }
+
+    .aboutContent, .img {
+        max-width: 50%; 
+    }
+
+    .img img {
+        max-width: 100%;
+    }
+}
+

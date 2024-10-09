@@ -17,10 +17,15 @@
         "name": "next"
       }
     ],
+    "baseUrl": "src", // Add this line
     "paths": {
-      "@/*": ["./src/*"]
-    }
+      "@/*": ["./*"],
+      "@styles/*": ["styles/*"], // Add this line for styles
+      "@components/*": ["component/*"],
+      "@images/*": ["images/*"]
+    } 
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
   "exclude": ["node_modules"]
 }
+

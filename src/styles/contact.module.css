@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+
+.body {
+    background-color: #000; 
+    color: #fff; 
+    padding: 20px;
+}
+
+.contactSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.contactContainer, .img {
+    flex: 1;
+}
+
+.img img {
+    max-width: 100%;
+    height: 750px;
+    border-radius: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contactSection {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .img img {
+        width: 100%;
+    }
+}
+
+.contactContainer {
+    max-width: 800px;
+    height: 750px;
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.h1 {
+    font-size: 2.9rem;
+    color: #77c04b;
+    text-align: center;
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.contactInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.infoItem {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.infoItem i {
+    font-size: 1.5rem;
+    color: #77c04b;
+}
+
+.infoItem p {
+    font-size: 1.1rem;
+}
+
+.contactForm form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactForm label {
+    font-size: 1rem;
+}
+
+.contactForm input, .contactForm textarea {
+    padding: 10px;
+    border: 1px solid #77c04b;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.contactForm button {
+    padding: 15px;
+    border: none;
+    background-color: #77c04b;
+    color: #000;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contactForm button:hover {
+    background-color: #55a033;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contactContainer {
+        padding: 20px;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    .contactInfo {
+        gap: 10px;
+    }
+
+    .contactForm input, .contactForm textarea {
+        font-size: 0.9rem;
+    }
+
+    .contactForm button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}
+
+/* Tablet Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contactContainer {
+        padding: 25px;
+    }
+
+    .h1 {
+        font-size: 2.2rem;
+    }
+
+    .contactForm input, .contactForm textarea {
+        font-size: 1rem;
+    }
+
+    .contactForm button {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}

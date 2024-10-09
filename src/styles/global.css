@@ -1,0 +1,13 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black; 
+    color: rgb(61, 168, 40); 
+    font-family: Arial, sans-serif; 
+}
+
